@@ -27,7 +27,6 @@ public class Vehiculo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idehiculo;
 	@Column(unique = true, nullable = false)
-	@Enumerated(EnumType.STRING)
 	private String placa;
 	@Enumerated(EnumType.STRING)
 	@Column (nullable = false)

@@ -24,6 +24,7 @@ import lombok.ToString;
 @Entity
 @Table(name = "registros")
 public class Registro {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idRegistro;
@@ -32,7 +33,6 @@ public class Registro {
 	private LocalDateTime fechaHoraSalida;
 	private Double valorPagado;
 	@Column(nullable = false)
-
 	private Boolean activo = true;
 	
 	@ManyToOne
