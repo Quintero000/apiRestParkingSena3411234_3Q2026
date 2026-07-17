@@ -14,7 +14,7 @@ public interface IVehiculoRepository extends JpaRepository<Vehiculo, Long> {
 
 	Optional<Vehiculo> findByPlaca(String placa);
 
-	boolean existisByPlaca(String placa);
+	boolean existsByPlaca(String placa);
 
 	@Lock(LockModeType.PESSIMISTIC_WRITE)
 	@Query("SELECT v FROM Vehiculo v WHERE v.placa = : placa")
